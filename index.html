@@ -55,9 +55,9 @@
               </figure>
               <div class="card-body items-center text-center">
                 <div class="flex">
-                  <img src="./images/Frame (1).png" alt="">
-                  <img src="./images/Frame (1).png" alt="">
-                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (2).png" alt="">
+                  <img src="./images/Frame (2).png" alt="">
+                  <img src="./images/Frame (2).png" alt="">
                   <img src="./images/Frame (2).png" alt="">
                   <img src="./images/Frame (2).png" alt="">
                 </div>
@@ -75,7 +75,7 @@
                   <img src="./images/Frame (1).png" alt="">
                   <img src="./images/Frame (1).png" alt="">
                   <img src="./images/Frame (1).png" alt="">
-                  <img src="./images/Frame (2).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
                   <img src="./images/Frame (2).png" alt="">
                 </div>
                 <h3 class="font-bold">Home Cooker</h3>
@@ -91,7 +91,7 @@
                 <div class="flex">
                   <img src="./images/Frame (1).png" alt="">
                   <img src="./images/Frame (1).png" alt="">
-                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (2).png" alt="">
                   <img src="./images/Frame (2).png" alt="">
                   <img src="./images/Frame (2).png" alt="">
                 </div>
@@ -109,7 +109,7 @@
                   <img src="./images/Frame (1).png" alt="">
                   <img src="./images/Frame (1).png" alt="">
                   <img src="./images/Frame (1).png" alt="">
-                  <img src="./images/Frame (2).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
                   <img src="./images/Frame (2).png" alt="">
                 </div>
                 <h3 class="font-bold">Full Jersey Set</h3>
@@ -133,6 +133,57 @@
                   <h5>159.00 TK</h5>
               </div>
             </div>
+            <!-- seven card  -->
+            <div onclick="handleCardClick(this)" class="card bg-gray-200 w-80">
+              <figure class="px-10 pt-10 ">
+                <img src="./images/prod7.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="flex">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (2).png" alt="">
+                </div>
+                <h3 class="font-bold">Single Relax Chair</h3>
+                  <h5>185.00 TK</h5>
+              </div>
+            </div>
+            <!-- eight card  -->
+            <div onclick="handleCardClick(this)" class="card bg-gray-200 w-80">
+              <figure class="px-10 pt-10 ">
+                <img src="./images/prod8.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="flex">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
+                </div>
+                <h3 class="font-bold">Children play</h3>
+                  <h5>299.00 TKK</h5>
+              </div>
+            </div>
+            <!-- nine card  -->
+            <div onclick="handleCardClick(this)" class="card bg-gray-200 w-80">
+              <figure class="px-10 pt-10 ">
+                <img src="./images/prod9.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="flex">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
+                  <img src="./images/Frame (1).png" alt="">
+                </div>
+                <h3 class="font-bold">Flexible Sofa</h3>
+                  <h5>339.00 TK</h5>
+              </div>
+            </div>
           </div>
   
           <!-- cart details div  -->
@@ -141,7 +192,7 @@
               Have coupon?
             </h1>
             <div class="text-center">
-              <input id=""class="p-2 mt-2"type="text" placeholder="Coupon code"/>
+              <input id=""class="p-2 mt-2 "type="text" placeholder="Coupon code"/>
               <button class="btn btn-secondary text-white px-8">Apply</button>
              </button>
             </div>
@@ -150,7 +201,20 @@
               <h4>Total Price: 00</h4>
               <h4>Discount: 00</h4>
               <h4>Total:00</h4>
-              <button class="btn btn-secondary text-white px-8">Make Purchase</button>
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="btn btn-secondary text-white px-8" onclick="my_modal_5.showModal()">Make Purchase</button>
+              <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <form method="dialog" class="modal-box">
+                  <div class="flex justify-center">
+                    <img src="./images/congo.png" alt="">
+                  </div>
+                  <h3 class="py-4 text-5xl font-bold">Congratulations</h3>
+                  <p>Your Purchase the product</p>
+                  <div class="my-4">
+                    <button class="btn btn-secondary text-white px-8 ">Go Home</button>
+                  </div>
+                </form>
+              </dialog>
             </div>
           </div>
         </section>
