@@ -26,7 +26,7 @@
         </div>
     </header>
     <main class="my-24">
-      <h2 class="text-4xl font-bold text-center">Kitchenware</h2>
+      <h2 class="text-4xl font-bold ">Kitchenware</h2>
         <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
           <div
             class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -192,15 +192,15 @@
               Have coupon?
             </h1>
             <div class="text-center">
-              <input id=""class="p-2 mt-2 "type="text" placeholder="Coupon code"/>
-              <button class="btn btn-secondary text-white px-8">Apply</button>
+              <input id="couponCode"class="p-2 mt-2 "type="text" placeholder="Coupon code"/>
+              <button onclick="applyBtn()" class="btn btn-secondary text-white px-8">Apply</button>
              </button>
             </div>
             <div id="selected-card" class="text-center"></div>
             <div class="text-center space-y-4 my-4">
-              <h4>Total Price: 00</h4>
-              <h4>Discount: 00</h4>
-              <h4>Total:00</h4>
+              <h4 id="total">Total Price: 00</h4>
+              <h4 id="discounted-total">Discount: 00</h4>
+              <h4 id="all-total">Total:00</h4>
               <!-- Open the modal using ID.showModal() method -->
               <button class="btn btn-secondary text-white px-8" onclick="my_modal_5.showModal()">Make Purchase</button>
               <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
@@ -211,7 +211,7 @@
                   <h3 class="py-4 text-5xl font-bold">Congratulations</h3>
                   <p>Your Purchase the product</p>
                   <div class="my-4">
-                    <button class="btn btn-secondary text-white px-8 ">Go Home</button>
+                    <button  id="purchase-btn" class="btn btn-secondary text-white px-8 ">Go Home</button>
                   </div>
                 </form>
               </dialog>
